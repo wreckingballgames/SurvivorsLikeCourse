@@ -5,7 +5,7 @@ namespace Survivors.Player;
 public partial class PlayerCharacter : CharacterBody3D
 {
     [Export]
-    public float MaxMoveSpeed { get; private set; }
+    private float MaxMoveSpeed { get; set; }
 
     public override void _PhysicsProcess(double delta)
     {
