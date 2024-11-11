@@ -8,6 +8,7 @@ radius = 0.25
 
 [node name="PlayerCharacter" type="CharacterBody3D"]
 script = ExtResource("1_vac6t")
+MaxMoveSpeed = 50.0
 
 [node name="characterMedium" parent="." instance=ExtResource("2_xp08t")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
