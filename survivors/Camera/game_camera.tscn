@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://ra3w8ga6s738"]
+
+[ext_resource type="Script" path="res://Camera/GameCamera.cs" id="1_awcq2"]
+
+[node name="GameCamera" type="Camera3D"]
+script = ExtResource("1_awcq2")
+PlayerCharacterOffset = Vector3(0, 10, -5)

@@ -19,6 +19,10 @@ config/icon="res://icon.svg"
 
 project/assembly_name="Survivors"
 
+[global_group]
+
+player_characters=""
+
 [input]
 
 move_forward={
@@ -45,6 +49,7 @@ strafe_right={
 [layer_names]
 
 3d_physics/layer_1="terrain"
+3d_physics/layer_2="player_characters"
 
 [rendering]
 

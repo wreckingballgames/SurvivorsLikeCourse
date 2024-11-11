@@ -18,7 +18,7 @@ public partial class PlayerCharacter : CharacterBody3D
     private Vector3 GetMovementVector()
     {
         float forwardMovement = Input.GetAxis("move_backward", "move_forward");
-        float rightMovement = Input.GetAxis("strafe_left", "strafe_right");
+        float rightMovement = Input.GetAxis("strafe_right", "strafe_left");
 
         return new Vector3(rightMovement, 0.0f, forwardMovement).Normalized();
     }
