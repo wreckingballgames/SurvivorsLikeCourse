@@ -1,0 +1,35 @@
+[gd_scene load_steps=9 format=3 uid="uid://7luchssl5r13"]
+
+[ext_resource type="PackedScene" uid="uid://ch5f4juuu8sih" path="res://Assets/Graphics/PrototypeKit/Models/GLB format/floor-diagonal.glb" id="1_umr1x"]
+[ext_resource type="PackedScene" uid="uid://bey55fb6xle1c" path="res://Assets/Graphics/PrototypeKit/Models/GLB format/floor-small-diagonal.glb" id="2_eb0fu"]
+[ext_resource type="PackedScene" uid="uid://dk7lvwoxiijkc" path="res://Assets/Graphics/PrototypeKit/Models/GLB format/floor-small-square.glb" id="3_5e1bk"]
+[ext_resource type="PackedScene" uid="uid://pt0akgj52x8e" path="res://Assets/Graphics/PrototypeKit/Models/GLB format/floor-square.glb" id="4_oft3t"]
+[ext_resource type="PackedScene" uid="uid://cu3qr3hmjxiqi" path="res://Assets/Graphics/PrototypeKit/Models/GLB format/floor-thick-corner-diagonal.glb" id="5_d80gb"]
+[ext_resource type="PackedScene" uid="uid://cfabhqm1pdlp0" path="res://Assets/Graphics/PrototypeKit/Models/GLB format/floor-thick-corner-round.glb" id="6_n0v1d"]
+[ext_resource type="PackedScene" uid="uid://kwhg5w8li5qs" path="res://Assets/Graphics/PrototypeKit/Models/GLB format/floor-thick-corner-rounded.glb" id="7_1mrrq"]
+[ext_resource type="PackedScene" uid="uid://cpubtgo8su331" path="res://Assets/Graphics/PrototypeKit/Models/GLB format/floor-thick.glb" id="8_xsl4g"]
+
+[node name="MeshLibrary" type="Node3D"]
+
+[node name="floor-diagonal2" parent="." instance=ExtResource("1_umr1x")]
+
+[node name="floor-small-diagonal2" parent="." instance=ExtResource("2_eb0fu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.13905, 0, 0)
+
+[node name="floor-small-square2" parent="." instance=ExtResource("3_5e1bk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.41724, 0, 0)
+
+[node name="floor-square2" parent="." instance=ExtResource("4_oft3t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.69327, 0, 0)
+
+[node name="floor-thick-corner-diagonal2" parent="." instance=ExtResource("5_d80gb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.98901, 0, 0)
+
+[node name="floor-thick-corner-round2" parent="." instance=ExtResource("6_n0v1d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.32973, 0, 0)
+
+[node name="floor-thick-corner-rounded2" parent="." instance=ExtResource("7_1mrrq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.61064, 0, 0)
+
+[node name="floor-thick2" parent="." instance=ExtResource("8_xsl4g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.92225, 0, 0)
