@@ -13,7 +13,6 @@ public partial class PlayerCharacter : CharacterBody3D
 
         Velocity = GetMovementVector() * MaxMoveSpeed;
         MoveAndSlide();
-        GD.Print(Velocity);
     }
 
     private Vector3 GetMovementVector()
