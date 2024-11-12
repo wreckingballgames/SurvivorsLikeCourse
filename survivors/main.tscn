@@ -1,7 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://gin1j7h8drm"]
+[gd_scene load_steps=10 format=3 uid="uid://gin1j7h8drm"]
 
 [ext_resource type="PackedScene" uid="uid://bjrm0i82sckl1" path="res://Spawner/enemy_spawner.tscn" id="1_114yr"]
 [ext_resource type="MeshLibrary" uid="uid://dje35ysgnmr8l" path="res://Resources/mesh_library.tres" id="1_acvxd"]
+[ext_resource type="PackedScene" uid="uid://cgv3fj0abu7wr" path="res://arena_time_manager.tscn" id="1_q7eb8"]
+[ext_resource type="Script" path="res://ArenaTimeManager.cs" id="2_i5is0"]
 [ext_resource type="PackedScene" uid="uid://ra3w8ga6s738" path="res://Camera/game_camera.tscn" id="2_sdvm4"]
 [ext_resource type="PackedScene" uid="uid://cvffbp6tsi8vf" path="res://Player/player_character.tscn" id="3_6cu3x"]
 
@@ -19,6 +21,9 @@ tonemap_mode = 2
 glow_enabled = true
 
 [node name="Main" type="Node"]
+
+[node name="ArenaTimeManager" parent="." instance=ExtResource("1_q7eb8")]
+script = ExtResource("2_i5is0")
 
 [node name="AbilityContainer" type="Node" parent="." groups=["ability_container"]]
 

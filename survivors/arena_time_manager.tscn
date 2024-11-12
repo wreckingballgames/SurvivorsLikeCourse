@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cgv3fj0abu7wr"]
+
+[node name="ArenaTimeManager" type="Node"]
+
+[node name="Timer" type="Timer" parent="."]
+unique_name_in_owner = true
