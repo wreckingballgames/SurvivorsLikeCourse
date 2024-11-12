@@ -23,6 +23,7 @@ project/assembly_name="Survivors"
 
 player_characters=""
 ability_container=""
+enemies=""
 
 [input]
 

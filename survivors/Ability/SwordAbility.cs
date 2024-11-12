@@ -4,6 +4,9 @@ namespace Survivors.Ability;
 
 public partial class SwordAbility : Node3D
 {
+    [Export]
+    public float MaxRange { get; private set; }
+
     private AnimationPlayer _animationPlayer;
 
     public override void _Ready()

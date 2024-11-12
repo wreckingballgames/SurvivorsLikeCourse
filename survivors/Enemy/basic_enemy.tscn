@@ -6,8 +6,9 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_g24ug"]
 size = Vector3(0.429199, 0.479492, 0.227417)
 
-[node name="BasicEnemy" type="CharacterBody3D"]
+[node name="BasicEnemy" type="CharacterBody3D" groups=["enemies"]]
 collision_layer = 4
+collision_mask = 5
 script = ExtResource("1_c6s4k")
 MaxMoveSpeed = 5.0
 

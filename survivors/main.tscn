@@ -45,3 +45,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, -5)
 
 [node name="BasicEnemy" parent="." instance=ExtResource("4_smpw8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.16506, 0, 6.27453)
+
+[node name="BasicEnemy2" parent="." instance=ExtResource("4_smpw8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.16506, 0, 3.42401)
+
+[node name="BasicEnemy3" parent="." instance=ExtResource("4_smpw8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.16506, 0, 8.15711)
