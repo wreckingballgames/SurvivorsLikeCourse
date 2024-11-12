@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://b6e5i66quhfaf"]
+[gd_scene load_steps=7 format=3 uid="uid://b6e5i66quhfaf"]
 
 [ext_resource type="PackedScene" uid="uid://br0c31qnudw5j" path="res://Assets/Graphics/PrototypeKit/Models/GLB format/weapon-sword.glb" id="1_r1uh8"]
 [ext_resource type="Script" path="res://Ability/SwordAbility.cs" id="1_s7whl"]
@@ -87,6 +87,9 @@ _data = {
 "swing": SubResource("Animation_7w4kt")
 }
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_f7iog"]
+size = Vector3(0.791748, 0.573822, 0.378906)
+
 [node name="SwordAbility" type="Node3D"]
 script = ExtResource("1_s7whl")
 MaxRange = 150.0
@@ -100,3 +103,11 @@ libraries = {
 "": SubResource("AnimationLibrary_gsdjv")
 }
 autoplay = "swing"
+
+[node name="Area3D" type="Area3D" parent="."]
+collision_layer = 8
+collision_mask = 4
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.13269, 0.29744, 0.0302734)
+shape = SubResource("BoxShape3D_f7iog")

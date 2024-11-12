@@ -10,7 +10,7 @@ radius = 0.25
 [node name="PlayerCharacter" type="CharacterBody3D" groups=["player_characters"]]
 collision_layer = 2
 script = ExtResource("1_vac6t")
-MaxMoveSpeed = 10.0
+MaxMoveSpeed = 7.0
 
 [node name="AbilityManager" type="Node" parent="."]
 

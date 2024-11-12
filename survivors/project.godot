@@ -53,6 +53,8 @@ strafe_right={
 3d_physics/layer_1="terrain"
 3d_physics/layer_2="player_characters"
 3d_physics/layer_3="enemies"
+3d_physics/layer_4="player_hurtboxes"
+3d_physics/layer_5="enemy_hurtboxes"
 
 [rendering]
 
