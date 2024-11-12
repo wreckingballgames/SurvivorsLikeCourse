@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Godot;
 
@@ -20,5 +21,11 @@ public static class Utilities
         }
 
         collection = tempCollection;
+    }
+
+    // Get the weight for a lerp using the formula suggested by Firebelley Games
+    public static float GetNaturalWeight(float delta, float factor)
+    {
+        return 1.0f - MathF.Exp(-delta * factor);
     }
 }

@@ -1,4 +1,6 @@
+using System.Web;
 using Godot;
+using Utility = Survivors.Utilities.Utilities;
 
 namespace Survivors.Player;
 
@@ -6,12 +8,15 @@ public partial class PlayerCharacter : CharacterBody3D
 {
     [Export]
     private float MaxMoveSpeed { get; set; }
+    [Export]
+    private float AccelerationSmoothing { get; set; }
 
     public override void _PhysicsProcess(double delta)
     {
         base._PhysicsProcess(delta);
 
-        Velocity = GetMovementVector() * MaxMoveSpeed;
+        Vector3 targetVelocity = GetMovementVector() * MaxMoveSpeed;
+        Velocity = Velocity.Lerp(targetVelocity, Utility.GetNaturalWeight((float)delta, AccelerationSmoothing));
         MoveAndSlide();
     }
 
