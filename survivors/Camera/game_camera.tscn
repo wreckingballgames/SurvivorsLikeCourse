@@ -4,4 +4,4 @@
 
 [node name="GameCamera" type="Camera3D"]
 script = ExtResource("1_awcq2")
-PlayerCharacterOffset = Vector3(0, 10, -5)
+PlayerCharacterOffset = Vector3(0, 10, 5)

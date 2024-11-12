@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dqi6y2u1inmtx"]
+
+[ext_resource type="PackedScene" uid="uid://c6h5op2fb2eyl" path="res://Assets/Graphics/PrototypeKit/Models/GLB format/animal-dog.glb" id="1_auuq8"]
+[ext_resource type="Script" path="res://Enemy/BasicEnemy.cs" id="1_c6s4k"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g24ug"]
+size = Vector3(0.429199, 0.479492, 0.227417)
+
+[node name="BasicEnemy" type="CharacterBody3D"]
+collision_layer = 4
+script = ExtResource("1_c6s4k")
+MaxMoveSpeed = 5.0
+
+[node name="animal-dog2" parent="." instance=ExtResource("1_auuq8")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.0104196, 0, 0.0130082)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.0181449, 0.239746, -0.0145341)
+shape = SubResource("BoxShape3D_g24ug")
