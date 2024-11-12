@@ -20,6 +20,8 @@ glow_enabled = true
 
 [node name="Main" type="Node"]
 
+[node name="AbilityContainer" type="Node" parent="." groups=["ability_container"]]
+
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_wn6ei")
 

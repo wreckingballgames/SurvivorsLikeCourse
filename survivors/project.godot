@@ -22,6 +22,7 @@ project/assembly_name="Survivors"
 [global_group]
 
 player_characters=""
+ability_container=""
 
 [input]
 
