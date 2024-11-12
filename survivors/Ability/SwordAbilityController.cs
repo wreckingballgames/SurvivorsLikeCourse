@@ -55,7 +55,7 @@ public partial class SwordAbilityController : Node
 
         _enemies.Sort(SortByDistance);
 
-        _abilityContainer.AddChild(swordAbilityInstance);
+        _abilityContainer.AddChild(swordAbilityInstance, true);
         swordAbilityInstance!.GlobalPosition = _enemies[0].GlobalPosition;
     }
 

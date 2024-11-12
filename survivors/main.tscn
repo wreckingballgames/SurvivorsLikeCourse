@@ -1,9 +1,9 @@
 [gd_scene load_steps=8 format=3 uid="uid://gin1j7h8drm"]
 
+[ext_resource type="PackedScene" uid="uid://bjrm0i82sckl1" path="res://Spawner/enemy_spawner.tscn" id="1_114yr"]
 [ext_resource type="MeshLibrary" uid="uid://dje35ysgnmr8l" path="res://Resources/mesh_library.tres" id="1_acvxd"]
 [ext_resource type="PackedScene" uid="uid://ra3w8ga6s738" path="res://Camera/game_camera.tscn" id="2_sdvm4"]
 [ext_resource type="PackedScene" uid="uid://cvffbp6tsi8vf" path="res://Player/player_character.tscn" id="3_6cu3x"]
-[ext_resource type="PackedScene" uid="uid://dqi6y2u1inmtx" path="res://Enemy/basic_enemy.tscn" id="4_smpw8"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_b31ub"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -21,6 +21,10 @@ glow_enabled = true
 [node name="Main" type="Node"]
 
 [node name="AbilityContainer" type="Node" parent="." groups=["ability_container"]]
+
+[node name="EnemySpawner" parent="." instance=ExtResource("1_114yr")]
+
+[node name="EnemyContainer" type="Node" parent="." groups=["enemy_container"]]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_wn6ei")
@@ -42,12 +46,3 @@ data = {
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, -5)
 
 [node name="PlayerCharacter" parent="." instance=ExtResource("3_6cu3x")]
-
-[node name="BasicEnemy" parent="." instance=ExtResource("4_smpw8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.16506, 0, 6.27453)
-
-[node name="BasicEnemy2" parent="." instance=ExtResource("4_smpw8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.16506, 0, 3.42401)
-
-[node name="BasicEnemy3" parent="." instance=ExtResource("4_smpw8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.16506, 0, 8.15711)

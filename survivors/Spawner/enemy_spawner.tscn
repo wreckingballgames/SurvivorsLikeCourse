@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bjrm0i82sckl1"]
+
+[ext_resource type="Script" path="res://Spawner/EnemySpawner.cs" id="1_4xjf1"]
+[ext_resource type="PackedScene" uid="uid://dqi6y2u1inmtx" path="res://Enemy/basic_enemy.tscn" id="2_52yu5"]
+
+[node name="EnemySpawner" type="Node"]
+script = ExtResource("1_4xjf1")
+BasicEnemyScene = ExtResource("2_52yu5")
+SpawnRadius = 15.0
+
+[node name="Timer" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 2.0
+autostart = true
